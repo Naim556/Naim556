@@ -1,0 +1,28 @@
+Genel Açıklama:
+Bu kod, Python'un Tkinter kütüphanesini kullanarak basit bir "Taş, Kağıt, Makas" oyunu oluşturur. Kullanıcı, üç seçenekten birini (taş, kağıt veya makas) seçebilir ve bu seçim bilgisayarın rastgele seçimiyle karşılaştırılır. Oyun, hem kullanıcının hem de bilgisayarın skorlarını takip eder.
+
+Ana Bileşenler:
+İçe Aktarılan Modüller:
+
+tkinter: GUI (grafik kullanıcı arayüzü) oluşturmak için.
+random: Bilgisayarın rastgele seçim yapmasını sağlamak için.
+messagebox: Hata mesajlarını göstermek için.
+Ana Fonksiyonlar:
+
+score_reset: Kullanıcı ve bilgisayar skorlarını sıfırlar.
+rock, paper, scissor: Kullanıcının girişini işler, bilgisayarın seçimiyle karşılaştırır ve skorları günceller.
+Kullanıcı Arayüzü:
+
+Program, GUI'yi yapılandırmak için üç çerçeve (Frame) kullanır:
+Üst Çerçeve: Skorları görüntüler ve sıfırlama düğmesini içerir.
+Orta Çerçeve: Kullanıcı ve bilgisayar seçimlerini görsellerle gösterir.
+Alt Çerçeve: Taş, kağıt ve makas seçeneklerini seçmek için düğmeleri içerir.
+Seçenekler ve düğmeler için çeşitli görseller kullanılmıştır.
+Oyun Mantığı:
+
+Kullanıcının seçimi, bilgisayarın rastgele oluşturulan seçimiyle karşılaştırılır ve kazanan belirlenir.
+Skorlar bu karşılaştırmaya göre güncellenir.
+Geçersiz bir seçim yapılırsa hata mesajı gösterilir.
+Görseller:
+
+Seçenekler ve düğmelerin görsel temsili için icon\\ klasöründe depolanan görseller kullanılmıştır.

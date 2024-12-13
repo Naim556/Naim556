@@ -1,0 +1,28 @@
+General Description:
+This code implements a simple "Rock, Paper, Scissors" game using Python's Tkinter library. It provides a graphical user interface (GUI) where the user can choose one of the three options (rock, paper, or scissors) and compare it with a random choice made by the computer. The game keeps track of the scores for both the user and the computer.
+
+Main Components:
+Imported Modules:
+
+tkinter: For creating the GUI.
+random: To generate the computer's random choice.
+messagebox: For displaying error messages.
+Core Functions:
+
+score_reset: Resets the scores of the user and the computer to zero.
+rock, paper, scissor: Each handles the user's input, compares it with the computer's choice, and updates the scores accordingly.
+User Interface:
+
+The program uses three frames to structure the GUI:
+Top Frame: Displays the scores and includes a reset button.
+Middle Frame: Displays the user's and computer's choices with images.
+Bottom Frame: Includes buttons for selecting rock, paper, or scissors.
+Various images are used for buttons and user/computer choices.
+Game Logic:
+
+The user's choice is compared to the computer's randomly generated choice to determine the winner.
+Scores are updated based on the comparison.
+An error message is displayed if an invalid choice is detected.
+Images:
+
+The code relies on images stored in the icon\\ directory for visual representation of options and buttons.
