@@ -1,0 +1,29 @@
+Bu kod, OpenWeatherMap API'sini ve Tkinter kütüphanesini kullanarak basit bir hava durumu uygulaması oluşturur. Kullanıcılar, bir şehir adı girerek sıcaklık, rüzgar hızı, nem, basınç ve hava durumu açıklaması gibi bilgileri görüntüleyebilir. Ayrıca, seçilen şehrin yerel saati de gösterilir.
+
+Temel Özellikler:
+İçe Aktarılan Modüller:
+
+tkinter: Grafik kullanıcı arayüzü (GUI) oluşturmak için.
+requests: OpenWeatherMap API'ye HTTP isteği göndermek için.
+timezonefinder: Coğrafi koordinatlarla zaman dilimini belirlemek için.
+datetime ve pytz: Yerel zamanı yönetmek ve göstermek için.
+Ana Fonksiyonlar:
+
+search: Kullanıcı girdisini (şehir adı) alır ve doğrular.
+error: API'ye istek gönderir ve giriş geçersiz veya şehir bulunamazsa hata mesajı gösterir.
+weather_answer: API yanıtını işler ve sıcaklık, rüzgar hızı, nem ve hava durumu açıklaması gibi bilgileri çıkarır.
+weather_show_the_answer: İşlenen bilgileri GUI üzerinde gösterir.
+Kullanıcı Arayüzü:
+
+Şehir adı girmek için bir metin giriş alanı vardır.
+Aramayı başlatmak için bir düğme eklenmiştir.
+Hava durumu bilgileri ve yerel saat etiketler aracılığıyla gösterilir.
+Güneşli, bulutlu, yağmurlu gibi hava koşullarını temsil etmek için çeşitli görseller kullanılmıştır.
+Özel Özellikler:
+
+Sıcaklık Dönüşümü: Sıcaklık Kelvin'den Celsius ve Fahrenheit'a dönüştürülür.
+Zaman Dilimi Algılama: Şehrin zaman dilimi coğrafi koordinatlarına göre belirlenir ve yerel saat gösterilir.
+Hava Durumu Görselleri: Hava durumunu görsel olarak göstermek için görseller kullanılmıştır.
+Kullanılan API:
+
+Hava durumu verilerini almak için OpenWeatherMap API kullanılmıştır. API anahtarı kodda belirtilmiştir (API_KEY = "01f674f7396d8a86ffa5553ee8563beb").
