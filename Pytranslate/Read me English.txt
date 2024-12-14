@@ -1,0 +1,24 @@
+This Python script is a personal project that translates text using the googletrans library.
+
+Library Import: The googletrans library is imported to use its translation features.
+
+Input: The user is asked to:
+       Enter the text they want to translate.
+
+Choose the target language (e.g., 'en' for English, 'tr' for Turkish).
+
+Translation Setup:
+
+A Translator object is created.
+
+The script detects the language of the input text.
+
+The text is translated into the selected target language.
+
+Output: The program displays:
+
+The detected source language.
+
+The target language chosen by the user.
+
+The translated text.

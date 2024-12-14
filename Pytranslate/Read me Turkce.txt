@@ -1,0 +1,24 @@
+Bu Python betiği, googletrans kütüphanesini kullanarak metin çevirisi yapan kişisel bir projedir.
+
+Kütüphane İçe Aktarma: Çeviri özelliklerini kullanmak için googletrans kütüphanesi dahil edilir.
+
+Giriş: Kullanıcıdan şu bilgileri girmesi istenir:
+       Çevirmek istediği metin.
+
+Hedef dil (örneğin, İngilizce için 'en', Türkçe için 'tr').
+
+Çeviri Ayarları:
+
+Bir Translator nesnesi oluşturulur.
+
+Giriş metninin dili algılanır.
+
+Metin, seçilen hedef dile çevrilir.
+
+Çıktı: Program şu bilgileri görüntüler:
+
+Algılanan kaynak dili.
+
+Kullanıcının seçtiği hedef dil.
+
+Çevrilen metin.
