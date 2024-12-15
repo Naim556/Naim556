@@ -1,0 +1,68 @@
+Genel Bakış:
+
+Bu kod, bir zar oyunudur. Oyuncu başlangıç bütçesini girer, ardından zarı atarak seçtiği sayının zar yüzlerinde kaç kez geldiğine bağlı olarak para kazanır ya da kaybeder. Oyun, oyuncunun bütçesi bitene kadar veya oyuncu oyunu bırakmak istediğinde sona erer.
+
+
+Fonksiyonlar ve Kod Açıklamaları:
+
+1. roll_dice()
+
+	Amacı: Üç zar atar ve sonuçları bir liste olarak döndürür.
+
+   Açıklama:
+
+	Bu satır, üç defa 1 ile 6 arasında rastgele bir sayı üretir ve 	bunları liste olarak döndürür.
+
+2. play_game(budget)
+
+	Amacı: 
+		Oyunun ana döngüsünü kontrol eder.
+	Açıklama:
+		Oyuncunun bütçesini sürekli olarak kontrol eder.
+		Oyuncuya oyun oynamak isteyip istemediğini sorar (Y veya N).
+		Oyuncunun seçtiği sayıyı (choice) ve oynayacağı miktarı (expense) alır. Geçersiz girişleri yakalar ve tekrar giriş yapmasını ister.
+		tas() fonksiyonunu çağırarak zarı atar ve sonuçlara göre bütçeyi günceller.
+
+3. tas(budget, choice, expense)
+
+	Amacı:
+	Zar atma işlemini yapar ve oyuncunun bütçesini günceller.
+	
+	Açıklama:
+	Zar sonuçlarını (faces) bir liste olarak alır ve ekrana yazdırır.
+	Oyuncunun seçtiği sayının zar sonuçlarında kaç kez geçtiğini kontrol eder:
+		3 eşleşme: Bahis miktarı 3 ile çarpılır.
+		2 eşleşme: Bahis miktarı 2 ile çarpılır.
+		1 eşleşme: Oyuncu yalnızca bahis miktarını geri alır.
+		0 eşleşme: Oyuncu bahis miktarını kaybeder.
+		Güncellenmiş bütçeyi döndürür.
+	
+4. Ana Kod (Giriş ve Başlatma)
+
+	Amacı: Oyuncudan başlangıç bütçesini alır ve pozitif bir değer olup olmadığını kontrol eder.
+	Eğer giriş geçerli ise, play_game() fonksiyonunu başlatır.
+
+
+Çalışma Prensibi:
+	1. Oyuncu başlangıç bütçesini girer.
+	2. Oyuncu, bir sayı seçer (1-6 arası) ve bahis miktarını belirler.
+	3. Zar atılır ve sonuçlara göre oyuncunun bütçesi güncellenir:
+		Eğer seçilen sayı zar yüzlerinde belirli sayıda çıkarsa, oyuncu para kazanır.
+		Aksi halde bahis miktarını kaybeder.
+	4. Oyuncu oyun oynamaya devam etmek isteyip istemediğine karar verir.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+This code is a dice game. The player enters an initial budget and rolls the dice. Based on how many times the selected number appears on the dice, the player either wins or loses money. The game ends when the player's budget runs out or when the player decides to stop.
+
+Functions and Code Explanation:
+1. roll_dice()
+
+	Purpose: Rolls three dice and returns their results in a list.
+
+	Explanation: This function generates three random numbers between 1 and 6 and returns them as a list.
+
+2. play_game(budget)
+
+	Purpose: Manages the main game loop.
+
+	Explanation:
+		Continuously checks the player's budget.
+		Asks the player whether they want to play the game (Y or N).
+		Gets the player's chosen number (choice) and bet amount (expense). Handles invalid inputs and prompts the player to re-enter them.
+		Calls the tas() function to roll the dice and updates the budget based on the results.
+
+3. tas(budget, choice, expense)
+
+	Purpose: Rolls the dice and updates the player's budget.
+
+	Explanation:
+		Takes the dice results (faces) as a list and prints them.
+		Checks how many times the player's selected number appears on the dice:
+			3 matches: The bet amount is multiplied by 3.
+			2 matches: The bet amount is multiplied by 2.
+			1 match: The player gets back the bet amount.
+			0 matches: The player loses the bet amount.
+			Returns the updated budget.
+
+4. Main Code (Input and Initialization)
+
+	Purpose: Prompts the player for an initial budget and ensures it is a positive value.
+	If valid, starts the play_game() function.
+
+Working Principle:
+	1. The player enters their initial budget.
+ 	2. The player selects a number (between 1 and 6) and sets the bet amount.
+	3. The dice are rolled, and based on the results:
+		If the chosen number appears a certain number of times, the player wins money.
+		Otherwise, the player loses the bet amount.
+	4. The player decides whether to continue playing or stop.
